@@ -17,9 +17,9 @@ class YtVideoData(BaseModelMixin):
         ("DEMO", "Demo"),
     ]
 
-    video_link = models.CharField(_("Question"), max_length=90)
-    video_discription = models.TextField(_("Description"), blank=True, null=False)
-    video_name = models.CharField(_("Question"), max_length=90)
+    video_link = models.CharField(max_length=90)
+    video_discription = models.TextField(blank=True, null=False)
+    video_subtitle = models.CharField(max_length=90)
 
     status = models.CharField(
         _("Status"), default="PUBLISHED", choices=STATUS_CHOICE, max_length=300
