@@ -62,7 +62,7 @@ def getData():
                         # Find the 'a' tag and get the 'href' attribute
                         a_tag = thumbnail_element.find_element(By.CSS_SELECTOR, 'a')
                         href = a_tag.get_attribute('href')
-
+                        print("href", href)
                         href = href.replace("https://www.youtube.com/watch?v=","")
                         # Print the 'href' attribute
                         print(link_Caption(href))
